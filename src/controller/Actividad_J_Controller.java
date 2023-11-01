@@ -2,10 +2,11 @@ package controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 
 public class Actividad_J_Controller {
 
-    @FXML
+	@FXML
     private ImageView imgAzulClaro;
 
     @FXML
@@ -32,5 +33,9 @@ public class Actividad_J_Controller {
     @FXML
     private ImageView imgRojo;
 
+    @FXML
+    void luz(MouseEvent event) {
+    	
+    }
 
 }

@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 
-<VBox id="fondo" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="635.0" prefWidth="600.0" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<FlowPane id="fondo" alignment="TOP_CENTER" columnHalignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="650.0" prefWidth="600.0" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Actividad_J_Controller">
    <children>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
          <children>
@@ -27,7 +26,7 @@
       </HBox>
       <HBox prefHeight="50.0" prefWidth="50.0">
          <children>
-            <ImageView fx:id="imgLuz" fitHeight="25.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgLuz" fitHeight="25.0" fitWidth="50.0" onMouseClicked="#luz" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/lucesOff.png" />
                </image>
@@ -38,9 +37,6 @@
          <image>
             <Image url="@../img/miniBlazingRed.png" />
          </image>
-         <VBox.margin>
-            <Insets bottom="20.0" />
-         </VBox.margin>
       </ImageView>
       <Label text="Selecciona tu color favorito" textFill="WHITE">
          <font>
@@ -92,7 +88,4 @@
          </children>
       </HBox>
    </children>
-   <padding>
-      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-   </padding>
-</VBox>
+</FlowPane>
