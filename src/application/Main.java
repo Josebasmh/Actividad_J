@@ -1,5 +1,36 @@
 package application;
 
-public class Main {
+import java.io.IOException;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.layout.FlowPane;
+import javafx.stage.Stage;
+
+public class Main extends Application{
+
+	@Override
+	public void start(Stage stage) throws Exception {
+		stage.setTitle("COCHE");
+		
+		//Image imgLogo = new Image();
+		FlowPane root;
+		try {
+			root = (FlowPane)FXMLLoader.load(getClass().getResource("/fxml/Coche.fxml"));
+			Scene scene = new Scene(root,600,650);
+			stage.setScene(scene);
+			stage.setMinHeight(650);
+			stage.setMinWidth(600);
+			stage.show();
+		} catch (IOException e) {
+			System.out.println("La ventana no se abrió correctamente.");
+			e.printStackTrace();
+		}
+		
+	}
+	public static void main(String[] args) {
+		launch(args);
+	}
 
 }
