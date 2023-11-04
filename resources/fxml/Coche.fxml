@@ -5,10 +5,10 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<FlowPane id="fondo" alignment="TOP_CENTER" columnHalignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="650.0" prefWidth="600.0" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Actividad_J_Controller">
+<FlowPane id="fondo" alignment="TOP_CENTER" columnHalignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="690.0" prefWidth="600.0" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Actividad_J_Controller">
    <children>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
          <children>
@@ -24,20 +24,29 @@
             </Label>
          </children>
       </HBox>
-      <HBox prefHeight="50.0" prefWidth="50.0">
+      <HBox prefHeight="25.0" prefWidth="50.0">
          <children>
-            <ImageView fx:id="imgLuz" fitHeight="25.0" fitWidth="50.0" onMouseClicked="#luz" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="logoLuz" fitHeight="25.0" fitWidth="50.0" onMouseClicked="#luz" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/lucesOff.png" />
                </image>
             </ImageView>
          </children>
       </HBox>
-      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../img/miniBlazingRed.png" />
-         </image>
-      </ImageView>
+      <Pane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ImageView fx:id="imgCoche" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/miniBlazingRed.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgLuz" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../img/autoLuz.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
       <Label text="Selecciona tu color favorito" textFill="WHITE">
          <font>
             <Font size="21.0" />
@@ -50,7 +59,7 @@
                   <Image url="@../img/colorBlazingRed.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="imgAzulClaro" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgAzulClaro" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#colorAzul" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/colorElectricBlue.jpg" />
                </image>

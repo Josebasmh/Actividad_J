@@ -20,8 +20,8 @@ public class Main extends Application{
 			root = (FlowPane)FXMLLoader.load(getClass().getResource("/fxml/Coche.fxml"));
 			Scene scene = new Scene(root,600,650);
 			stage.setScene(scene);
-			stage.setMinHeight(650);
-			stage.setMinWidth(600);
+			stage.setMinHeight(700);
+			stage.setMinWidth(620);
 			stage.show();
 		} catch (IOException e) {
 			System.out.println("La ventana no se abrió correctamente.");
