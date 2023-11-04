@@ -10,6 +10,10 @@ import javafx.stage.Stage;
 
 public class Main extends Application{
 
+	/**
+	 * Crea una ventana donde hay un mini y se puede elegir entre tener las luces 
+	 * encendidas/apagadas y cambiarle el color.
+	 */
 	@Override
 	public void start(Stage stage) throws Exception {
 		stage.setTitle("COCHE");

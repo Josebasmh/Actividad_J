@@ -53,6 +53,10 @@ public class Actividad_J_Controller implements Initializable{
 
     private boolean bEncendido;
     
+    /**
+     * Método para cambiar el icono de luz (encendido/apagado) y visibilizar la imagen de luces.
+     * @param event
+     */
     @FXML
     void luz(MouseEvent event) {
     	if (!bEncendido) {
@@ -66,41 +70,73 @@ public class Actividad_J_Controller implements Initializable{
     	imgLuz.setVisible(bEncendido);
     }
     
+    /**
+     * Método para cambiar la imagen al coche de color azul.
+     * @param event
+     */
     @FXML
     void colorAzulClaro(MouseEvent event) {
     	imgCoche.setImage(new Image(getClass().getResource("/img/miniElectricBlue.png").toString()));
     }
     
+    /**
+     * Método para cambiar la imagen al coche de color azul oscuro.
+     * @param event
+     */
     @FXML
     void colorAzulOscuro(MouseEvent event) {
     	imgCoche.setImage(new Image(getClass().getResource("/img/miniLapisluxuryBlue.png").toString()));
     }
 
+    /**
+     * Método para cambiar la imagen al coche de color blanco.
+     * @param event
+     */
     @FXML
     void colorBlanco(MouseEvent event) {
     	imgCoche.setImage(new Image(getClass().getResource("/img/miniPepperWhite.png").toString()));
     }
 
+    /**
+     * Método para cambiar la imagen al coche de color gris.
+     * @param event
+     */
     @FXML
     void colorGris(MouseEvent event) {
     	imgCoche.setImage(new Image(getClass().getResource("/img/miniMoonwalkGrey.png").toString()));
     }
 
+    /**
+     * Método para cambiar la imagen al coche de color gris oscuro.
+     * @param event
+     */
     @FXML
     void colorGrisOscuro(MouseEvent event) {
     	imgCoche.setImage(new Image(getClass().getResource("/img/miniThunderGray.png").toString()));
     }
 
+    /**
+     * Método para cambiar la imagen al coche de color marron.
+     * @param event
+     */
     @FXML
     void colorMarron(MouseEvent event) {
     	imgCoche.setImage(new Image(getClass().getResource("/img/miniVolcaninOrange.png").toString()));
     }
 
+    /**
+     * Método para cambiar la imagen al coche de color negro.
+     * @param event
+     */
     @FXML
     void colorNegro(MouseEvent event) {
     	imgCoche.setImage(new Image(getClass().getResource("/img/miniMidnightBlack.png").toString()));
     }
 
+    /**
+     * Método para cambiar la imagen al coche de color rojo.
+     * @param event
+     */
     @FXML
     void colorRojo(MouseEvent event) {
     	imgCoche.setImage(new Image(getClass().getResource("/img/miniBlazingRed.png").toString()));
