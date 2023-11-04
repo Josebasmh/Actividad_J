@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<FlowPane id="fondo" alignment="TOP_CENTER" columnHalignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="691.0" prefWidth="600.0" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Actividad_J_Controller">
+<FlowPane id="fondo" alignment="TOP_CENTER" columnHalignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="690.0" prefWidth="600.0" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Actividad_J_Controller">
    <children>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
          <children>
@@ -54,42 +54,42 @@
       </Label>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
          <children>
-            <ImageView fx:id="imgRojo" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgRojo" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#colorRojo" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/colorBlazingRed.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="imgAzulClaro" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgAzulClaro" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#colorAzulClaro" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/colorElectricBlue.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="imgAzulOscuro" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgAzulOscuro" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#colorAzulOscuro" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/colorLapisluxuryBlue.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="imgNegro" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgNegro" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#colorNegro" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/colorMidnightBlack.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="imgGris" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgGris" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#colorGris" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/colorMoonwalkGrey.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="imgBlanco" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgBlanco" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#colorBlanco" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/colorPepperWhite.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="imgGrisOscuro" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgGrisOscuro" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#colorGrisOscuro" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/colorThunderGray.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="imgMarron" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgMarron" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#colorMarron" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/colorVolcaninOrange.jpg" />
                </image>
