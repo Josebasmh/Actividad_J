@@ -65,6 +65,46 @@ public class Actividad_J_Controller implements Initializable{
     	
     	imgLuz.setVisible(bEncendido);
     }
+    
+    @FXML
+    void colorAzulClaro(MouseEvent event) {
+    	imgCoche.setImage(new Image(getClass().getResource("/img/miniElectricBlue.png").toString()));
+    }
+    
+    @FXML
+    void colorAzulOscuro(MouseEvent event) {
+    	imgCoche.setImage(new Image(getClass().getResource("/img/miniLapisluxuryBlue.png").toString()));
+    }
+
+    @FXML
+    void colorBlanco(MouseEvent event) {
+    	imgCoche.setImage(new Image(getClass().getResource("/img/miniPepperWhite.png").toString()));
+    }
+
+    @FXML
+    void colorGris(MouseEvent event) {
+    	imgCoche.setImage(new Image(getClass().getResource("/img/miniMoonwalkGrey.png").toString()));
+    }
+
+    @FXML
+    void colorGrisOscuro(MouseEvent event) {
+    	imgCoche.setImage(new Image(getClass().getResource("/img/miniThunderGray.png").toString()));
+    }
+
+    @FXML
+    void colorMarron(MouseEvent event) {
+    	imgCoche.setImage(new Image(getClass().getResource("/img/miniVolcaninOrange.png").toString()));
+    }
+
+    @FXML
+    void colorNegro(MouseEvent event) {
+    	imgCoche.setImage(new Image(getClass().getResource("/img/miniMidnightBlack.png").toString()));
+    }
+
+    @FXML
+    void colorRojo(MouseEvent event) {
+    	imgCoche.setImage(new Image(getClass().getResource("/img/miniBlazingRed.png").toString()));
+    }
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
